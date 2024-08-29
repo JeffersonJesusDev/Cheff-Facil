@@ -351,7 +351,7 @@ h1{
         position: relative;
         z-index: 10;
         overflow: hidden;
-        width: 63%;
+        width: 430px;
         left: 11%;
         display: block;
     }
