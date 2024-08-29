@@ -10,6 +10,13 @@ body{
     background-image: url(imagens/f1ae97ae-5aa0-402d-9a6a-a36f1890c7b8.jfif);
 }
 
+main{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
 @font-face{
     font-family:font1;
     src: url(fonts/PlayfairDisplaySC-Black.ttf);
@@ -19,8 +26,9 @@ body{
 header{
     position: relative;
     border-bottom: 1px solid black;
-    box-shadow: 1px 1px 6px;
+    box-shadow: 1px 1px 6px rgb(147, 145, 145);
 }
+
 nav {
     display: flex;
     width: 100%;
@@ -84,12 +92,6 @@ h1{
     font-family: font1;
 }
 
-main{
-    position: relative;
-    width: 95%;
-    height: auto;
-    margin: auto;
-}
 .fundo{
     display: flex;
     position: relative;
@@ -167,6 +169,23 @@ h2{
     color: rgb(0, 0, 0);
     font-family:font1;
 }
+
+#nav_link a:hover{
+    transform: scale(1.1);
+  }
+
+  #nav_link a:active{
+    transform: scale(1);
+  }
+
+    #nav_link2 a:hover{
+      transform: scale(1.1);
+    }
+
+    #nav_link2 a:active{
+      transform: scale(1);
+    }
+
 
 /* visualização tablet */
 @media(min-width:481px) {

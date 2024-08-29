@@ -12,22 +12,24 @@
 </head>
 
 <body>
+   <main>
+
+   
    <header class="navHeader">
       <nav>
-          <div id="nav_link">
-            <a href="">
-
+         <div id="nav_link">
+            <a href="/index.html">
                <h1 id="logoName">Chef Fácil</h1>
-            </a>
-              <a href="deploy/UC1_Receitas2/chefinho.html" id="receitas">Receitas</a>
-              <a href="#" id="contatos">Contatos</a>
-          </div>
-          <img id="chefHat" src="../UC1_Receitas2/fotos/chefs-hat.png" alt="chapéu do(a) cheff cozinha">
-          <div id="nav_link2">
-              <a href="#" id="login">Login</a>
-              <a href="#" id="cadastrese">Cadastre-se </a>
-          </div>
-      </nav>
+           </a>
+             <a href="deploy/UC1_Receitas2/chefinho.html" id="receitas">Receitas</a>
+             <a href="/deploy/footer/footer.html" id="contatos">Contatos</a>
+         </div>
+         <img id="chefHat" src="/deploy/imagens/chefs-hat.png" alt="chapéu do(a) cheff cozinha">
+         <div id="nav_link2">
+             <a href="deploy/login2/loginForm.html" id="login">Login</a>
+             <a href="deploy/cadastroForm/cadastroForm.html" id="cadastrese">Cadastre-se </a>
+         </div>
+     </nav>
   </header>
    <header>
       <h1 id="titulo">Receitas <br>
@@ -151,12 +153,24 @@
 
       </div>
    </section>
+</main>
    <!-- Paginação -->
    <div class="swiper-pagination"></div>
 
    <script defer src="swiper-bundle.min.js"></script>
 
    <script defer src="chefinho.js"></script>
+
+   <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 </body>
 
 </html>

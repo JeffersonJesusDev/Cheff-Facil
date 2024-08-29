@@ -1,9 +1,14 @@
 body{
     background-image: url(fotos/background.jpeg);
-    height: auto;
     overflow-y: hidden;
     overflow-x: hidden;
-    width: 95%;
+}
+
+main{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: auto;
 }
 
 @font-face{
@@ -11,24 +16,14 @@ body{
     src: url(/deploy/fonts/PlayfairDisplaySC-Black.ttf);
 }
 
-@font-face{
-    font-family:font1;
-    src: url(fonts/PlayfairDisplaySC-Black.ttf);
-}
-
-main{
+.navHeader{
     position: relative;
-    width: 95%;
-    height: auto;
-    margin: auto;
-}
-
-header{
-    position: relative;
+    border-bottom: 1px solid black;
+    box-shadow: 1px 1px 6px rgb(147, 145, 145);
 }
 nav {
     display: flex;
-    width: 100%;
+    width: 98%;
     text-wrap: wrap;
     height: 60px;
     font-weight: bold;
@@ -241,6 +236,23 @@ h1{
 .swiper-pagination-bullet-active{
     background-color: #ce3e00;
 }
+
+#nav_link a:hover{
+    transform: scale(1.1);
+  }
+
+  #nav_link a:active{
+    transform: scale(1);
+  }
+
+    #nav_link2 a:hover{
+      transform: scale(1.1);
+    }
+
+    #nav_link2 a:active{
+      transform: scale(1);
+    }
+
 
 @media screen and (max-width: 480px){
     .cartao_data{

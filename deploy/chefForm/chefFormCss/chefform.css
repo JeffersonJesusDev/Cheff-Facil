@@ -17,9 +17,11 @@
   }
   
   header{
-    position:relative;
+    position: relative;
     width: 100%;
-}
+    border-bottom: 1px solid black;
+    box-shadow: 1px 1px 6px rgb(147, 145, 145);
+ }
 
 nav h1{
   font-family: "Playfair Display SC", serif;
@@ -30,6 +32,7 @@ nav {
     width: 100%;
     text-wrap: wrap;
     font-weight: bold;
+    height: 100px;
     padding: 40px;
     align-items: center;
     justify-content: space-between;
@@ -43,6 +46,7 @@ nav a {
     text-wrap: wrap;
     font-weight: bold;
     color: #f54828;
+
     text-decoration: none;
     /* margin-bottom: 10px; */
 }
@@ -67,15 +71,16 @@ nav img{
 }
 
 #nav_link{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
+
 #nav_link2{
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 nav img{
