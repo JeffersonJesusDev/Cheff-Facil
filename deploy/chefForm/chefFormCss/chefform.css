@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: url("../chefFormImg/background.jfif");
+    min-height: 100vh;
+    /* min-width: 100%; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-repeat: repeat-y;
+    overflow-x: hidden;
+    overflow-y: hidden; 
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  header{
+    position:relative;
+    width: 100%;
+}
+
+nav h1{
+  font-family: "Playfair Display SC", serif;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    text-wrap: wrap;
+    font-weight: bold;
+    padding: 40px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+nav a {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    font-size: 20px;
+    text-wrap: wrap;
+    font-weight: bold;
+    color: #f54828;
+    text-decoration: none;
+    /* margin-bottom: 10px; */
+}
+
+
+#login{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#cadastrese{
+    background-color: #f54828;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+nav img{
+    margin-right: 100px;
+}
+
+#nav_link{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#nav_link2{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav img{
+    display: flex;
+    width: 4%;
+    right: 0px;
+}
+
+header h1{
+    text-wrap: wrap;
+    font-size: 370%;
+    color: #f54828;
+}
+  main {
+    width: 100%;
+    display: flex;
+    /* height: 100vh; */
+    padding: 20px;
+    margin: 15px;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 50px; */
+    justify-content: center;
+  }
+
+  h1{
+    font-size:3.7rem;
+    color: #fa4b00;
+    /* font-family: pinky; */
+  }
+
+  form {
+    /* background-color: #fa4b00; */
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    /* z-index: -1; */
+  }
+  
+  form input,
+  select {
+    display: flex;
+    font-size: 1.4rem;
+    font-family: "Montserrat", system-ui;
+    color: #fa4b00;
+    /* border: 1px solid black; */
+    width: 50%;
+    height: 50px;
+    border: none;
+    padding-left:20px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+
+select option:hover {
+  background-color: #fa4b00;
+}
+
+  select ,  input[type=date]{
+    border: 1px solid black;
+    box-shadow: 2px 2px 8px black
+  }
+
+  select:hover{
+    background-color: #f0f0f0;
+  }
+
+  input[type=date]:hover{
+    background-color: #f0f0f0;
+  }
+
+  form label {
+    display: flex;
+    font-size: 1.7rem;
+    font-weight: 500;
+    font-family: "Montserrat", system-ui;
+    width: 50%;
+    margin-top: 25px;
+    align-items: start;
+  }
+  
+  form select:focus {
+    border: transparent;
+    border-color: #fa4b00;
+    box-shadow: inset 0 6px 6px rgba(255, 81, 81, 0.075),
+      0 0 15px rgba(255, 0, 0, 0.6);
+  }
+
+  
+  form >  input:focus{
+      border:transparent;
+      border-color: #fa4b00;
+      box-shadow: inset 0 6px 6px rgba(255, 81, 81, 0.075),
+      0 0 15px rgba(255, 0, 0, 0.6);
+    }
+  
+  .buttons-group {
+    display: flex;
+    width: 60%;
+    margin: 40px 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .buttons-group button {
+    margin: 0 20px;
+    width: 25%;
+    height: 54px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border: 1px solid transparent;
+    border-radius: 9px;
+    padding: 10px;
+    box-shadow: 2px 2px 4px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button:hover{
+    transform: scale(1.1);
+  }
+  
+  #first-button {
+    background: url('./background.jfif');
+    background-size: cover;
+    border: none;
+    /* border: 1px solid #fa4b00; */
+    color: #fa4b00;
+  }
+  
+  #second-button {
+    background-color: #fa4b00;
+    color: white;
+    border: 1px solid transparent;
+  }
+  
+  .buttons-group button:active {
+    transform: scale(1);
+  }
+  
+  #destaque-img {
+   width: 100px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* height: 980px; */
+    position: absolute;
+    left: 1300px;
+    bottom: 100px;
+    /* width: 1%; */
+    z-index: -1;
+  }
+  
+  #destaque-img2 {
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 980px;
+    position: absolute;
+    width: 100%;
+    right: 1100px;
+    top: 300px;
+    z-index: -1;
+  }
+  #nav_link a:hover{
+    transform: scale(1.1);
+  }
+
+  #nav_link a:active{
+    transform: scale(1);
+  }
+
+    #nav_link2 a:hover{
+      transform: scale(1.1);
+    }
+
+    #nav_link2 a:active{
+      transform: scale(1);
+    }
+
+  
+  
+  @media  screen and (max-width: 500px) {
+      body{
+          width: 100%;
+          min-height: 100vh;
+          overflow-x: hidden;
+          overflow-y: scroll;
+          background-repeat: repeat-y;
+          display: flex;
+          flex-direction: column;
+          /* align-items: start; */
+          /* justify-content:start; */
+      }
+
+      nav {
+        width: 100%;
+        flex-direction: column;
+        text-wrap: wrap;
+        font-weight: bold;
+    }
+    nav a {
+        font-size: 19px;
+        /* flex-direction: column; */
+        text-wrap: wrap;
+        font-weight: bold;
+        color: #f54828;
+        text-decoration: none;
+        /* margin-bottom: 10px; */
+    }
+
+    #logoName{
+        font-size: 2rem;
+    }
+
+
+    #login{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        /* flex-direction: column; */
+    }
+
+    #cadastrese{
+      display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+    }
+
+   #nav_link h1{
+    font-size: 2.4rem;
+   }
+
+      h1{
+        font-size: 2.5rem;
+      }
+  
+    form {
+      display: flex;
+      width: 90%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+    }
+
+    form input,
+    select {
+    width: 90%;
+      
+    }
+  
+    form label {
+      width: 90%;
+      font-weight:500;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: start;
+    }
+  
+    select option {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 1.2rem;
+    }
+  
+    .buttons-group {
+      width: 80%;
+      flex-direction: column;
+      /* padding: 10; */
+  
+    }
+  
+    .buttons-group button {
+      width: 90%;
+      padding: 20px;
+      margin: 10px 0;
+    }
+  
+    #destaque-img,
+    #destaque-img2 {
+      display: none;
+    }
+  }
+
+
+  
+  @media  screen and (min-width: 500px) {
+    @media  screen and (max-width: 1124px) {
+      body{
+        /* margin-top: 50px; */
+          overflow-y: scroll;
+          background-repeat: repeat-y;
+      }
+
+      nav {
+        width: 100%;
+        flex-direction: column;
+        text-wrap: wrap;
+        font-weight: bold;
+    }
+    nav a {
+        font-size: 19px;
+        flex-direction: column;
+        text-wrap: wrap;
+        font-weight: bold;
+        color: #f54828;
+        text-decoration: none;
+    }
+
+    #logoName{
+        font-size: 4rem;
+    }
+
+    #chefHat{
+        display: none;
+    }
+
+
+    #login{
+        display: flex;
+        /* width: 100%; */
+        flex-direction: column;
+    }
+
+    #cadastrese{
+        display: flex;
+        flex-direction: column;
+    }
+
+      form {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+      }
+
+      option{
+        padding: 1px;
+        font-size: 1.1rem;
+      }
+  
+      form label{
+      color:#fa4b00;
+          
+          font-weight: bold;
+      }
+  
+      .buttons-group {
+        width: 100%;
+        flex-direction: column;
+        /* margin-top: 40px; */
+      }
+  
+      .buttons-group button {
+        padding: 10px;
+        
+        font-size: 1rem;
+        margin-top: 20px;
+      }
+  
+      #destaque-img {
+        width: 100%;
+        position: absolute;
+        top:90px;
+        left: 100px;
+        z-index: -1;
+      }
+  
+      #destaque-img2 {
+        display: none;
+      }
+    }
+  }
+  

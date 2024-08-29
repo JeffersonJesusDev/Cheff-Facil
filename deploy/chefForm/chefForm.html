@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, 
+    initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="./chefFormCss/chefform.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="../img/chefs-hat.png" rel="stylesheet" type="image/x-icon" />
+    <title>Chefe a Domicílio</title>
+  </head>
+  <body>
+    <header class="navHeader">
+      <nav>
+          <div id="nav_link">
+            <a href="/index.html">
+               <h1 id="logoName">Chef Fácil</h1>
+            </a>
+              <a href="deploy/UC1_Receitas2/chefinho.html" id="receitas">Receitas</a>
+              <a href="#" id="contatos">Contatos</a>
+          </div>
+          <img id="chefHat" src="../UC1_Receitas2/fotos/chefs-hat.png" alt="chapéu do(a) cheff cozinha">
+          <div id="nav_link2">
+              <a href="#" id="login">Login</a>
+              <a href="#" id="cadastrese">Cadastre-se </a>
+          </div>
+      </nav>
+  </header>
+    
+    <main>
+      <h1 aria-label="Chef a domícilio" aria-required="true">
+        Chef a Domicílio
+      </h1>
+      <form action="">
+        <label for="culinaria">Culinaria</label>
+        <select id="aa" aria-label="escolha uma culinaria">
+          <option selected disabled>Selecione uma culinaria</option>
+          <option aria-label="italiana">Italiana</option>
+          <option aria-label="chinesa">Chinesa</option>
+          <option aria-label="típica regional">Típica Regional</option>
+          <option aria-label="japonesa">Japonesa</option>
+          <option aria-label="francesa">Francesa</option>
+          <option aria-label="mexicana">Mexicana</option>
+        </select>
+
+        <label for="culinaria">Qual estado você reside:</label>
+        <select aria-label="qual estado você mora">
+          <option selected disabled>Qual estado você mora</option>
+          <option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="DF">Distrito Federal</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="GO">Goiás</option>
+          <option value="MA">Maranhão</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="PA">Pará</option>
+          <option value="PB">Paraíba</option>
+          <option value="PR">Paraná</option>
+          <option value="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="RO">Rondônia</option>
+          <option value="RR">Roraima</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SP">São Paulo</option>
+          <option value="SE">Sergipe</option>
+          <option value="TO">Tocantins</option>
+        </select>
+
+        <label for="culinaria">Escolher Chef:</label>
+        <select aria-label="escolha um chef">
+          <option class="a" selected disabled>Escolha um Chef</option>
+          <option value="1">Salvatore Loi</option>
+          <option value="2">Carlos Bertolazzi</option>
+          <option value="3">Rodrigo Oliveira</option>
+          <option value="4">Jun Sakamoto</option>
+          <option value="5">Claude Troisgros</option>
+          <option value="6">Danielle Dahoui</option>
+        </select>
+
+        <label for="culinaria">Escolher data:</label>
+        <input
+          type="date"
+          id="FormControlInputMonth"
+          aria-label="escolher uma data"
+        />
+
+        <div class="buttons-group" role="group">
+          <button
+            id="first-button"
+            type="button"
+            aria-label="botão de cadastro"
+          >
+            cadastre-se
+          </button>
+          <button
+            id="second-button"
+            type="button"
+            aria-label="botão de contratar um chef"
+          >
+            Contratar Chef
+          </button>
+        </div>
+      </form>
+
+      <div id="destaque-img">
+        <img
+          src="../chefForm/chefFormImg/freepik-export-20240829041525qeJz.png"
+          alt="panela de feijoada"
+          width="900px"
+        />
+      </div>
+
+      <div id="destaque-img2">
+        <img
+          src="../chefForm/chefFormImg/sopa-de-creme-de-abobora.png"
+          alt=""
+          width="tijela de sopa de abobora"
+        />
+      </div>
+    </main>
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+  </body>
+</html>

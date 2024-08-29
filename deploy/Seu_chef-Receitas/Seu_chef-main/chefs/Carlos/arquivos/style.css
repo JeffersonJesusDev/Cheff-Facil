@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    overflow-x: hidden; /* Melhor para evitar o scroll horizontal */
+}
+
+.background {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/br-author-joaopedro.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.cabeçalho-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cabeçalho-link ul {
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+}
+
+.cabeçalho-link li {
+    display: inline;
+}
+
+.cabeçalho-link a {
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.cabeçalho-link a:hover {
+    color: #f54828;
+    transition: color 0.3s;
+}
+
+button {
+    color: #f54828;
+    background: transparent;
+    border: solid 1px #f54828;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 150px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #f54828;
+    color: #fff;
+    transition: background-color 0.5s;
+}
+
+.container-text {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    max-width: 80%;
+    margin: 2rem auto;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.text {
+    text-align: left;
+}
+
+.text h3 {
+    color: #fff;
+    font-size: 18px;
+}
+
+.text h1 {
+    color: #fff;
+    margin: 20px 0;
+    font-size: 3rem;
+}
+
+.text span {
+    color: #f54828;
+}
+
+.text p {
+    font-weight: 400;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.redes-social {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.redes-social a {
+    color: #f54828;
+    font-size: 1.7rem;
+}
+
+.btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .cabeçalho-link ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .cabeçalho-link a {
+        font-size: 12px;
+    }
+
+    .text h1 {
+        font-size: 2rem;
+    }
+
+    .container-text {
+        padding: 20px;
+        margin: 1rem auto;
+    }
+
+    .redes-social a {
+        font-size: 1.5rem;
+    }
+
+    button {
+        width: 100%;
+    }
+    .background{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 1366px) {
+    .container-text {
+        max-width: 90%;
+    }
+
+    .text h1 {
+        font-size: 2.5rem;
+    }
+    .background{
+        width: 100%;
+        height: 170vh;
+    }
+}
+@media (max-width: 480px){
+.background{
+    width: 100%;
+    height: 250vh;
+}
+}
+@media (max-width: 375px){
+    .background{
+        width: 100%;
+        height: 350vh;
+    }
+    }
+    @media (max-width: 500px){
+        .background{
+            width: 100%;
+            height: 350vh;
+        }
+        }

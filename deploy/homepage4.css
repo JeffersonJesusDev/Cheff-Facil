@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-image: url(imagens/f1ae97ae-5aa0-402d-9a6a-a36f1890c7b8.jfif);
+}
+
+@font-face{
+    font-family:font1;
+    src: url(fonts/PlayfairDisplaySC-Black.ttf);
+}
+
+
+header{
+    position: relative;
+    border-bottom: 1px solid black;
+    box-shadow: 1px 1px 6px;
+}
+nav {
+    display: flex;
+    width: 100%;
+    text-wrap: wrap;
+    height: 100px;
+    font-weight: bold;
+    padding: 1.7%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    font-family:font1;
+    font-size: 25px;
+    text-wrap: wrap;
+    font-weight: bold;
+    color: #f54828;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+#login{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#cadastrese{
+    background-color: #f54828;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+nav img{
+    margin-right: 100px;
+}
+
+#nav_link{
+    display: flex;
+    align-items: end;
+    gap: 20px;
+}
+
+#nav_link2{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav img{
+    display: flex;
+    width: 4%;
+    right: 0px;
+}
+
+h1{
+    font-size: 70px;
+    color: #f54828;
+    font-family: font1;
+}
+
+main{
+    position: relative;
+    width: 95%;
+    height: auto;
+    margin: auto;
+}
+.fundo{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.ladoD{
+    margin-top: 80px;
+    text-align: center;
+    display: flex;
+    height: 700px;
+    flex-direction: column;
+    font-size: 35px;
+    width: 30%;
+    padding: 14px;
+    float: left;
+    align-items: center;
+}
+.meio{
+    width: 40%;
+    height: auto;
+    float: left;
+}
+
+.centro img{
+    align-items: center;
+    position: absolute;
+    margin-left: -365px;
+    width: 80%;
+    margin-top: -29px;
+    z-index: -1;
+}
+
+.ladoE{
+    justify-content: end;
+    text-align: center;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+    width: 30%;
+    padding: 14px;
+    float: left;
+    align-items: center;
+}
+
+.ladoD a{
+    width: 400px;
+    color: #ffffff;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 2%;
+    background-color: #f54828;
+}
+
+.ladoE a{
+    width: 400px;
+    color: #ffffff;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 2%;
+    background-color: #f54828;
+} 
+
+p{
+    color: rgb(0, 0, 0);
+}
+
+h2{
+    color: rgb(0, 0, 0);
+    font-family:font1;
+}
+
+/* visualização tablet */
+@media(min-width:481px) {
+    @media (max-width:790px) {
+        main{
+            width: 95%;
+        }
+        
+        nav {
+            flex-direction: column;
+            text-wrap: wrap;
+            font-weight: bold;
+        }
+        nav a {
+            font-size: 18px;
+            flex-direction: column;
+            text-wrap: wrap;
+            font-weight: bold;
+            color: #f54828;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+        
+        #logoName{
+            font-size: 35px;
+        }
+        
+        #chefHat{
+            display: none;
+        }
+        
+        
+        #login{
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #cadastrese{
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .centro img{
+            width: 100%;
+            margin-top: 0px;
+            margin-left: 13px;
+        }
+
+        .meio {
+            width: 90%;
+            height: 150px;
+        }
+        
+        .fundo{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+        
+        p{
+            font-size: 28px;
+        }
+        .ladoD,.ladoE{
+            display: flex;
+            flex-direction: column;
+            width: 95% ;
+            height: 200px;
+        }
+        .ladoD{
+            font-size: 22px;
+        }
+
+        .ladoE{
+            font-size: 22px;
+        }
+
+    }
+}
+
+
+/* visualização para mobile */
+@media (max-width:480px) {
+    main{
+        width: 95%;
+    }
+    nav {
+        flex-direction: column;
+        text-wrap: wrap;
+        font-weight: bold;
+    }
+    nav a {
+        font-size: 18px;
+        flex-direction: column;
+        text-wrap: wrap;
+        font-weight: bold;
+        color: #f54828;
+        text-decoration: none;
+        margin-bottom: 10px;
+    }
+    
+    #logoName{
+        font-size: 30px;
+    }
+    
+    #chefHat{
+        display: none;
+    }
+    
+    
+    #login{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #cadastrese{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .centro img{
+        width: 100%;
+        margin-top: -120px;
+        margin-left: 1px;
+    }
+
+    .meio {
+        width: 100%;
+        height: 150px;
+    }
+    
+    .fundo{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+    p{
+        font-size: 28px;
+    }
+    .ladoD,.ladoE{
+        display: flex;
+        flex-direction: column;
+        width: 95% ;
+        height: 200px;
+    }
+    .ladoD a{
+        font-size: 22px;
+        width: 300px;
+    }
+    .ladoE a{
+        font-size: 22px;
+        width: 300px;
+    }
+    .ladoD,.ladoE p{
+        font-size: 22px;
+    }
+    
+}
