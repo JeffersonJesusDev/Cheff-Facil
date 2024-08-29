@@ -17,7 +17,7 @@ main{
 }
 
 .navHeader{
-    position: relative;
+    position: fixed;
     border-bottom: 1px solid black;
     box-shadow: 1px 1px 6px rgb(147, 145, 145);
 }
